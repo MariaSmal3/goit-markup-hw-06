@@ -121,6 +121,7 @@ textarea {
           |============================
         */
 .title {
+  font-family: 'Roboto';
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
@@ -552,17 +553,18 @@ padding-top: 48;
         }
 /* Projects-section */
 .projects {
-  display: none;
+  padding-bottom: 120px;
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (max-width: 1157px) {
 .projects {
   display: block;
-    padding-bottom: 120px;
   }
   }
 .projects-list {
   display: flex;
   gap: var(--indent);
+  align-items: center;
+  justify-content: space-between;
 }
 .projects-list-item {
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -878,7 +880,6 @@ padding-top: 48;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--main-dark-color);
-  width: 100%;
 }
 @media only screen and (min-width: 1158px) {
   .footer {
@@ -889,11 +890,10 @@ padding-top: 48;
 
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
 .footer-container {
-  display: flex;
+ display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   row-gap: 72px;
-  width: 584px;
   column-gap: var(--indent);
   }
 }
@@ -905,7 +905,7 @@ padding-top: 48;
 }
 @media only screen and (max-width: 767.98px) {
 .footer-logo-text-container {
-  
+  margin-bottom: 72px;
 }
 }
 @media only screen and (min-width: 1158px) {
