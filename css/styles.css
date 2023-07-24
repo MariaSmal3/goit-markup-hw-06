@@ -503,31 +503,16 @@ padding-top: 48;
 }
 
 .profit-title {
+  font-family: 'Roboto';
   color: var(--main-dark-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
+    margin-bottom: 8px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767.98px) {
-.profit-title {
-  text-align: left;
-  font-size: 36px;
-  font-weight: 700;
-  }
-  }
-  
-    @media only screen and (min-width: 768px) {
-  .profit-title {
-    font-size: 36px;
-      font-weight: 700;
-    }
-    }
-        @media only screen and (min-width: 1156px) {
-    .profit-title {
-      font-size: 20px;
-      }
-      }
+
   .profit-list-item-icon-thumb {
     display: flex;
     justify-content: center;
