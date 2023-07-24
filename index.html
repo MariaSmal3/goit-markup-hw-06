@@ -49,6 +49,11 @@
         </li>
       </ul>
     </address>
+    <button class="menu-toggle js-open-menu btn" aria-controls="mobile-menu" aria-expanded="false">
+      <svg class="menu-toggle-icon" width="32" height="22">
+        <use href="./images/icons.svg#mob-menu"></use>
+          </svg>
+        </button>
   </div>
   </header>
   <!-- section 1 -->
@@ -63,7 +68,7 @@
     <!-- section 2 -->
     <section class="profit section">
       <div class="container">
-      <h2 class="title visually-hidden">Advantages</h2>
+      <h2 class="visually-hidden">Advantages</h2>
       <ul class="profit-list list">
         <!-- Strategy-subsection -->
         <li class="profit-item">
@@ -121,13 +126,13 @@
       <div class="container">
       <h2 class="title">What are we doing</h2>
       <ul class="projects-list list">
-        <li class="projects-list">
+        <li class="projects-list-item">
           <img src="./images/img.jpg" alt="computer" width="360" height="300" />
         </li>
-        <li class="projects-list">
+        <li class="projects-list-item">
           <img src="./images/img1.jpg" alt="mesenger" width="360" height="300" />
         </li>
-        <li class="projects-list">
+        <li class="projects-list-item">
           <img src="./images/img2.jpg" alt="viewing text on the phone" width="360" height="300" />
         </li>
       </ul>
@@ -136,11 +141,15 @@
 
     <!-- Our-team-section -->
     <section class="section our-team">
-      <div class="container">
+      <div class="our-team-container container">
       <h2 class="title">Our Team</h2>
       <ul class="our-team-list list">
         <li class="our-team-item">
-          <img src="./images/img3.jpg" alt="Mark Guerrero" width="264" height="260" />
+          <img
+          srcset="./images/team_1@1x.jpg 1x,
+          ./images/team_1@2x.jpg 2x"
+           src="./images/img3@1x.jpg" 
+          alt="Mark Guerrero" width="264" height="260" />
           <div class="team-card-content">
           <h3 class="profit-title">Mark Guerrero</h3>
           <p class="our-team-text">Product Designer</p>
@@ -192,7 +201,11 @@
          </div>
         </li>
         <li class="our-team-item">
-          <img src="./images/img4.jpg" alt="Tom Ford" width="264" height="260" />
+          <img 
+          srcset="./images/team_2@1x.jpg 1x,
+          ./images/team_2@2x.jpg 2x"
+          src="./images/img4@1x.jpg" 
+          alt="Tom Ford" width="264" height="260" />
           <div class="team-card-content">
           <h3 class="profit-title">Tom Ford</h3>
           <p class="our-team-text">Frontend Developer</p>
@@ -246,7 +259,11 @@
         </li>
 
         <li class="our-team-item">
-          <img src="./images/img5.jpg" alt="Camila Garcia" width="264" height="260" />
+          <img 
+          srcset="./images/team_3@1x.jpg 1x,
+          ./images/team_3@2x.jpg 2x"
+          src="./images/img5@1x.jpg" 
+          alt="Camila Garcia" width="264" height="260" />
           <div class="team-card-content">
           <h3 class="profit-title">Camila Garcia</h3>
           <p class="our-team-text">Marketing</p>
@@ -299,7 +316,11 @@
         </li>
 
         <li class="our-team-item">
-          <img src="./images/img6.jpg" alt="Daniel Wilson" width="264" height="260" />
+          <img 
+          srcset="./images/team_4@1x.jpg 1x,
+          ./images/team_4@2x.jpg 2x"
+          src="./images/img6@1x.jpg" 
+          alt="Daniel Wilson" width="264" height="260" />
           <div class="team-card-content">
           <h3 class="profit-title">Daniel Wilson</h3>
           <p class="our-team-text">UI Designer</p>
@@ -530,6 +551,13 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" 
+      defer
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+      ></script>
+    <script src="./js/mobile-menu.js" defer></script>
   <!-- Modal window script -->
   <script src="./js/modal.js"></script>
 </body>
