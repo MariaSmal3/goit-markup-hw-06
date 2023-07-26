@@ -161,6 +161,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /* Приховати заголовки */
 .visually-hidden {
   position: absolute;
@@ -178,7 +179,14 @@ input,
 textarea {
   font-family: inherit;
 }
-
+.section-title {
+  margin-bottom: 72px;
+  color: var(--main-dark-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
 /**
           |============================
           | Base styles
