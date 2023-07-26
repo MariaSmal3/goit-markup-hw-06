@@ -163,7 +163,7 @@ img {
 }
 
 /* Приховати заголовки */
-.visually-hidden {
+юvisually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
