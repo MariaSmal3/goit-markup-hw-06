@@ -127,13 +127,25 @@
       <h2 class="projects-title">What are we doing</h2>
       <ul class="projects-list list">
         <li class="projects-list-item">
-          <img src="./images/img.jpg" alt="computer" width="360" height="300" />
+          <img 
+          srcset="./images/what-are-we-doing_1@1x.jpg 1x,
+          ./images/what-are-we-doing_1@2x.jpg 2x" 
+          src="./images/img@1x.jpg" 
+          alt="computer" width="360" height="300" />
         </li>
         <li class="projects-list-item">
-          <img src="./images/img1.jpg" alt="mesenger" width="360" height="300" />
+          <img 
+          srcset="./images/what-are-we-doing_2@1x.jpg 1x,
+          ./images/what-are-we-doing_2@2x.jpg 2x"
+          src="./images/img1@1x.jpg" 
+          alt="mesenger" width="360" height="300" />
         </li>
         <li class="projects-list-item">
-          <img src="./images/img2.jpg" alt="viewing text on the phone" width="360" height="300" />
+          <img 
+          srcset="./images/what-are-we-doing_3@1x.jpg 1x,
+          ./images/what-are-we-doing_3@2x.jpg 2x"
+          src="./images/img2@1x.jpg" 
+          alt="viewing text on the phone" width="360" height="300" />
         </li>
       </ul>
       </div>
@@ -368,16 +380,16 @@
     <section class="customer section">
         <div class="customers-container container">
           <h2 class="customer-title">Customers</h2>
-          <ul class="customer-list">
+          <ul class="customer-list list">
             <li class="customers-list-item">
-              <a class="customer-list-item-link" href="#" aria-label="Ya&Co" target="_blank" rel="noopener noreferrer">
+              <a class="customer-list-item-link link" href="#" aria-label="Ya&Co" target="_blank" rel="noopener noreferrer">
                 <svg class="customer-list-item-link-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-logo-1"></use>
                   </svg>
                   </a>
                   </li>
                   <li class="customers-list-item">
-                    <a class="customer-list-item-link" href="#" aria-label="Company Tagline Here" target="_blank"
+                    <a class="customer-list-item-link link" href="#" aria-label="Company Tagline Here" target="_blank"
                       rel="noopener noreferrer">
                       <svg class="customer-list-item-link-icon" width="104" height="56">
                         <use href="./images/icons.svg#icon-logo-2"></use>
@@ -385,27 +397,28 @@
                       </a>
                       </li>
                       <li class="customers-list-item">
-                        <a class="customer-list-item-link" href="#" aria-label="Company" target="_blank" rel="noopener noreferrer">
+                        <a class="customer-list-item-link link" href="#" aria-label="Company" target="_blank" rel="noopener noreferrer">
                           <svg class="customer-list-item-link-icon" width="104" height="56">
                             <use href="./images/icons.svg#icon-logo-3"></use>
                           </svg>
                           </a>
                           </li>
                           <li class="customers-list-item">
-                            <a class="customer-list-item-link" href="#" aria-label="Foster Peters" target="_blank" rel="noopener noreferrer">
+                            <a class="customer-list-item-link link" href="#" aria-label="Foster Peters" target="_blank" rel="noopener noreferrer">
                               <svg class="customer-list-item-link-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-logo-4"></use>
                               </svg>
                               </a>
                               </li>
                               <li class="customers-list-item">
-                                <a class="customer-list-item-link" href="#" aria-label="Brend" target="_blank" rel="noopener noreferrer">
+                                <a class="customer-list-item-link link" href="#" aria-label="Brend" target="_blank" rel="noopener noreferrer">
                                   <svg class="customer-list-item-link-icon" width="104" height="56">
                                     <use href="./images/icons.svg#icon-logo-5"></use>
                                     </svg>
                                     </a>
                                     </li>
-                                    <li class="customers-list-item"><a class="customer-list-item-link" href="#" aria-label="Company Tagline" target="_blank"
+                                    <li class="customers-list-item">
+                                      <a class="customer-list-item-link link" href="#" aria-label="Company Tagline" target="_blank"
                                         rel="noopener noreferrer">
                                         <svg class="customer-list-item-link-icon" width="104" height="56">
                                           <use href="./images/icons.svg#icon-logo-6"></use>
@@ -495,59 +508,59 @@
   <!-- Modal window -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" data-modal-close type="button">
-        <svg class="modal-icon" width="8" height="8">
+      <button class="modal-close-btn btn" data-modal-close type="button">
+        <svg class="close-modal-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
 <!-- Order Servise form -->
-<p class="modal-title">Leave your contacts and we will call you back</p>
+<p class="modal-caption">Leave your contacts and we will call you back</p>
   <form class="modal-form" name="issue-report-form" autocomplete="on">
-<div class="div-form-label">
-  <label class="modal-label" for="user-name">Name</label>
-            <div class="div-modal-input">
-              <input class="modal-input" id="user-name" name="user-name" type="text" required />
+<div class="modal-form-field-container">
+  <label class="modal-form-label" for="user-name">Name</label>
+            <div class="modal-form-input-container">
+              <input class="modal-form-input" id="user-name" name="user-name" type="text" required />
               <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
 </svg>
     </div>
   </div>
-  <div class="div-form-label">
-    <label class="modal-label" for="user-phone">Phone</label>
-    <div class="div-modal-input">
-      <input class="modal-input" id="user-phone" name="user-phone" type="tel" required />
+  <div class="modal-form-field-container">
+    <label class="modal-form-label" for="user-phone">Phone</label>
+    <div class="modal-form-input-container">
+      <input class="modal-form-input" id="user-phone" name="user-phone" type="tel" required />
       <svg class="modal-form-icon" width="18" height="24">
         <use href="./images/icons.svg#icon-phone"></use>
       </svg>
       </div>
       </div>
-      <div class="div-form-label">
-        <label class="modal-label" for="user-email">Email</label>
-        <div class="div-modal-input">
-          <input class="modal-input" id="user-email" name="user-email" type="email" required />
+      <div class="modal-form-field-container">
+        <label class="modal-form-label" for="user-email">Email</label>
+        <div class="modal-form-input-container">
+          <input class="modal-form-input" id="user-email" name="user-email" type="email" required />
           <svg class="modal-form-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-email"></use>
             </svg>
             </div>
             </div>
-            <div class="div-form-label">
-              <label class="modal-label" for="user-comment">Comment</label>
-              <textarea class="modal-textarea" id="user-comment" name="user-comment" placeholder="Text input" required></textarea>
+            <div class="modal-form-textarea-container">
+              <label class="modal-form-label" for="user-comment">Comment</label>
+              <textarea class="modal-form-input" id="user-comment" name="user-comment" placeholder="Text input" required></textarea>
             </div>
-            <div class="form-field">
-              <input class="accept-input visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true"
+            <div class="modal-form-checkbox-container">
+              <input class="modal-form-checkbox visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true"
                 required />
-              <label class="user-privacy-label" for="user-privacy">
-                <span class="span-privacy-label">
-                  <svg class="icon-privacy-label" width="10" height="8">
+              <label class="modal-form-checkbox-label" for="user-privacy">
+                <span class="modal-form-checkbox-accent">
+                  <svg class="modal-form-checkbox-icon" width="10" height="8">
                     <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="privacy-policy-link" href="#">Privacy Policy</a>
+              <a class="modal-form-checkbox-link link" href="#">Privacy Policy</a>
             </label>
           </div>
-          <button class="modal-form-button" type="submit">Send</button>
+          <button class="modal-form-button btn" type="submit">Send</button>
         </form>
       </div>
     </div>
